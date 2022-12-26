@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Wrapper from "../wrapper/SkillTabWrapper";
 
 function SkillTab() {
-  const [selected, setSelected] = useState("");
-  const [active, setActive] = useState(1);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const skills = (
     <div className="skills">
       <div className="front-end">
@@ -23,6 +20,10 @@ function SkillTab() {
       </div>
     </div>
   );
+  const [selected, setSelected] = useState(skills);
+  const [active, setActive] = useState(1);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   const experience = (
     <div className="experience">
       <div className="exp">
@@ -48,11 +49,6 @@ function SkillTab() {
       </div>
     </div>
   );
-
-  useEffect(() => {
-    setSelected(skills);
-    setActive(1);
-  }, [skills]);
 
   function clickFunctionality(tab, number) {
     setSelected(tab);

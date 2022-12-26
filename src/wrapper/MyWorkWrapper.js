@@ -83,4 +83,3 @@ const Wrapper = styled.div`
 `;
 
 export default Wrapper;
-// https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=600

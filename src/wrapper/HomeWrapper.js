@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import myPic from "../assets/myPic.png";
 
 const Wrapper = styled.main`
   background-color: black;
@@ -42,7 +43,7 @@ const Wrapper = styled.main`
     /* 2nd part */
     > .image {
       flex: 1;
-      background-image: url("/myPic.png");
+      background-image: url(${myPic});
       background-repeat: no-repeat;
       background-size: 1000px;
       background-attachment: fixed;
